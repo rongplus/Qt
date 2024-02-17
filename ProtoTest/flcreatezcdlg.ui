@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FLCreateZCDlg</class>
+ <widget class="QDialog" name="FLCreateZCDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create new Zone Controller</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="protoRC.qrc">
+    <normaloff>:/pro/Resources/icons/OTA_logo_400x400.png</normaloff>:/pro/Resources/icons/OTA_logo_400x400.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Zone controllor</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>ZC Name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="leName"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Location</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="leLocation"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>MAC address</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>PAN ID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Channel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="comboBox"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Range</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="leRange"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox_2">
+        <item>
+         <property name="text">
+          <string>1126</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1225</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1324</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1423</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1522</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1621</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1720</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1819</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1918</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2017</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2116</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2215</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2314</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2413</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2512</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2611</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="leMAC">
+        <property name="inputMask">
+         <string>NN:NN:NN:NN:NN:NN:NN:NN</string>
+        </property>
+        <property name="text">
+         <string>00:00:00:00:00:00:00:00</string>
+        </property>
+        <property name="maxLength">
+         <number>23</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Zone Controllor</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0" rowspan="4">
+       <widget class="FLTreeWidget" name="treeWidget">
+        <column>
+         <property name="text">
+          <string notr="true">1</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pbAdd">
+        <property name="text">
+         <string>Add WIO</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pbDelete">
+        <property name="text">
+         <string>Delete WIO</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pbEdit">
+        <property name="text">
+         <string>Edit WIO</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>52</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>217</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="okButton">
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="cancelButton">
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>FLTreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>fltreewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="protoRC.qrc"/>
+ </resources>
+ <connections/>
+</ui>

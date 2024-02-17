@@ -1,0 +1,61 @@
+syntax = "proto3";
+import "fl_defs.proto";
+message FWVersion {
+	optional uint32 major = 1;
+	optional uint32 minor = 2;
+	optional uint32 patch = 3;
+	optional string suffix = 4;
+}
+message FWWIO {
+	optional string guid = 1;
+	optional string title = 2;
+	optional string location = 3;
+	optional string mac_address = 4;
+	optional string pan_id = 5;
+	optional uint32 channel = 6;
+	optional DeviceBaseModel model = 7;
+	optional SignalingType signaling = 8;
+}
+message FWCorrelationInput {
+	oneof node 
+	{
+		string zc_guid = 1;
+		string wio_guid = 2;
+	}
+	oneof source
+    {
+    	InputType input = 3;
+        SystemStatusType system_status = 4;
+        LocalTroubleType local_trouble = 5;
+        RemoteTroubleType remote_trouble = 6;
+    }	
+}
+message FWCorrelation {
+	enum TriggerType {
+		ANY_INPUTS = 0;
+		ALL_INPUTS = 1;
+	}
+	optional LocalRelay relay = 1;
+	optional TriggerType trigger = 2;
+	repeated FWCorrelationInput input = 3;
+}
+message FWZC {
+	optional string guid = 1;
+	optional string title = 2;
+	optional string location = 3;
+	optional string mac_address = 4;
+	optional string pan_id = 5;
+	optional uint32 channel = 6;
+	repeated FWWIO wio = 7;
+	repeated FWCorrelation correlation = 8;
+}
+message FWJob {
+	optional string guid = 1;
+	optional FWVersion job_version = 2;
+	optional FWVersion configurator_version = 3;
+	optional string date = 4;
+	optional string title = 5;
+	optional string password = 6;
+	optional StandardType standard = 7;
+	optional FWZC zc = 8;
+}

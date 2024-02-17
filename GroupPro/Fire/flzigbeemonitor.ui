@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FLZigbeeMonitor</class>
+ <widget class="QWidget" name="FLZigbeeMonitor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>987</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FLZigbeeMonitor</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="1" rowspan="2">
+    <widget class="QTabWidget" name="tabTest">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Command</string>
+      </attribute>
+      <widget class="QWidget" name="widget_contain" native="true">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>38</y>
+         <width>768</width>
+         <height>544</height>
+        </rect>
+       </property>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>261</x>
+          <y>0</y>
+          <width>246</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>New Column</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Value</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QTreeWidget" name="treeWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>246</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustIgnored</enum>
+        </property>
+        <property name="expandsOnDoubleClick">
+         <bool>false</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string notr="true">All Commands</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QTreeWidget" name="treeWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>513</x>
+          <y>0</y>
+          <width>246</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>Commands</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QTreeWidget" name="tree_comm_mostused">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>330</y>
+          <width>241</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <property name="expandsOnDoubleClick">
+         <bool>false</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Test/Debug Commands</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLineEdit" name="le_comm">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>350</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_data">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>350</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lb_find">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>520</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find Command</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_find">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>520</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QCommandLinkButton" name="p_expand_all">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>185</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(85, 170, 0);
+border-color: rgb(85, 85, 0);</string>
+        </property>
+        <property name="text">
+         <string>All Commands</string>
+        </property>
+        <property name="icon">
+         <iconset resource="firelink.qrc">
+          <normaloff>:/firelink/Resources/icons/play-button.png</normaloff>:/firelink/Resources/icons/play-button.png</iconset>
+        </property>
+       </widget>
+       <widget class="QCommandLinkButton" name="pb_eapand_mostly">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>185</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Test Commands</string>
+        </property>
+        <property name="icon">
+         <iconset resource="firelink.qrc">
+          <normaloff>:/firelink/Resources/icons/play-button.png</normaloff>:/firelink/Resources/icons/play-button.png</iconset>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pb_clear_history">
+       <property name="geometry">
+        <rect>
+         <x>696</x>
+         <y>9</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Clear History</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>64</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Command file</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>79</x>
+         <y>10</y>
+         <width>69</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pbSend_comm">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>9</y>
+         <width>82</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Send Command</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_reset">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>10</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_history_setting">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>10</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Setting</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Moniter</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="tb_monitor">
+         <column>
+          <property name="text">
+           <string>TimeStamp</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Channel</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Length</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Stack</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Layer</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Message</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>MAC Source</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>MAC Destination</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>MAC Sequence</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Information</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>246</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="serialPortInfoBox">
+     <property name="title">
+      <string>Select Serial Port</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0" colspan="2">
+       <widget class="QComboBox" name="serialPortBox"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="pbConnect">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QPushButton" name="pbFresh">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Fresh</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="descriptionLabel">
+        <property name="text">
+         <string>Description:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="manufacturerLabel">
+        <property name="text">
+         <string>Manufacturer: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QLabel" name="serialNumberLabel">
+        <property name="text">
+         <string>Serial numbers: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QLabel" name="locationLabel">
+        <property name="text">
+         <string>Location:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QLabel" name="vendorIDLabel">
+        <property name="text">
+         <string>Vendor ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QLabel" name="productIDLabel">
+        <property name="text">
+         <string>Product ID:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="firelink.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbSend_comm</sender>
+   <signal>clicked()</signal>
+   <receiver>FLZigbeeMonitor</receiver>
+   <slot>on_send_command()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_clear_history</sender>
+   <signal>clicked()</signal>
+   <receiver>FLZigbeeMonitor</receiver>
+   <slot>on_clear_history()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_send_command()</slot>
+  <slot>on_clear_history()</slot>
+  <slot>onStartDevice()</slot>
+  <slot>onOpenJob()</slot>
+  <slot>onOpenFW()</slot>
+  <slot>onWriteFW()</slot>
+  <slot>onCancelFW()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/mytool">
+        <file>img/face-sad.png</file>
+        <file>img/face-smile 2.png</file>
+        <file>img/face-smile 3.png</file>
+        <file>img/face-smile 4.png</file>
+    </qresource>
+</RCC>

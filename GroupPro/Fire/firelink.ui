@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FireLinkClass</class>
+ <widget class="QMainWindow" name="FireLinkClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>793</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FireLink</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="firelink.qrc">
+    <normaloff>:/firelink/Resources/icons/sys-stat-icon-48.png</normaloff>:/firelink/Resources/icons/sys-stat-icon-48.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>980</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Job</string>
+    </property>
+    <addaction name="actionNew_Job"/>
+    <addaction name="actionOpen_Job_2"/>
+    <addaction name="actionSave_Job"/>
+    <addaction name="actionSave_Job_As"/>
+    <addaction name="actionDelete_Job"/>
+    <addaction name="actionClean_recent_job"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionJobManager"/>
+    <addaction name="actionUsbDebug"/>
+    <addaction name="actionZigbee_debug"/>
+    <addaction name="actionWirelessMonitor"/>
+    <addaction name="actionZigbeeMonitor"/>
+    <addaction name="actionSS"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionAdd"/>
+    <addaction name="actionEdit"/>
+    <addaction name="actionDelete"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>MainBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>42</width>
+     <height>42</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionJobManager"/>
+   <addaction name="actionUsbDebug"/>
+   <addaction name="actionZigbee_debug"/>
+   <addaction name="actionZigbeeMonitor"/>
+   <addaction name="actionWirelessMonitor"/>
+   <addaction name="actionSS"/>
+   <addaction name="actionOTA"/>
+   <addaction name="actionPCAP"/>
+   <addaction name="separator"/>
+   <addaction name="actionAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew_Job">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/add-folder-icon.png</normaloff>:/firelink/Resources/icons/add-folder-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Job</string>
+   </property>
+   <property name="toolTip">
+    <string>Create New Job</string>
+   </property>
+  </action>
+  <action name="actionSave_Job">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/save-icon.png</normaloff>:/firelink/Resources/icons/save-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Job</string>
+   </property>
+  </action>
+  <action name="actionSave_Job_As">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/save-icon.png</normaloff>:/firelink/Resources/icons/save-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Job As</string>
+   </property>
+  </action>
+  <action name="actionDelete_Job">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/remove-folder-icon.png</normaloff>:/firelink/Resources/icons/remove-folder-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete Job</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/zone-icon-48.png</normaloff>:/firelink/Resources/icons/zone-icon-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionOpen_Job">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/open-icon.png</normaloff>:/firelink/Resources/icons/open-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open_Job</string>
+   </property>
+   <property name="toolTip">
+    <string>Open a job</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/connect-icon.png</normaloff>:/firelink/Resources/icons/connect-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+   <property name="toolTip">
+    <string>Connect to Zigbee or WIO</string>
+   </property>
+  </action>
+  <action name="actionSendJob">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/dialog-icon.png</normaloff>:/firelink/Resources/icons/dialog-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>SendJob</string>
+   </property>
+   <property name="toolTip">
+    <string>Send a Job</string>
+   </property>
+  </action>
+  <action name="actionUpdateFirmware">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/firmware_update.png</normaloff>:/firelink/Resources/icons/firmware_update.png</iconset>
+   </property>
+   <property name="text">
+    <string>UpdateFirmware</string>
+   </property>
+   <property name="toolTip">
+    <string>Update Firmware</string>
+   </property>
+  </action>
+  <action name="actionUsbDebug">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/terminal.png</normaloff>:/firelink/Resources/icons/terminal.png</iconset>
+   </property>
+   <property name="text">
+    <string>USB Debug Terminal</string>
+   </property>
+  </action>
+  <action name="actionFloor">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/floor-plan-icon.png</normaloff>:/firelink/Resources/icons/floor-plan-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Floor View</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/Pencil-icon.png</normaloff>:/firelink/Resources/icons/Pencil-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/close-icon.png</normaloff>:/firelink/Resources/icons/close-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/add-icon.png</normaloff>:/firelink/Resources/icons/add-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/about-icon.png</normaloff>:/firelink/Resources/icons/about-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionZigbeedebug">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/corr-icon-48.png</normaloff>:/firelink/Resources/icons/corr-icon-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zigbee</string>
+   </property>
+  </action>
+  <action name="actionWIO">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/wio-icon-48.png</normaloff>:/firelink/Resources/icons/wio-icon-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>WIO</string>
+   </property>
+  </action>
+  <action name="actionZigbee_debug">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/zigbee-test-icon.png</normaloff>:/firelink/Resources/icons/zigbee-test-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>ZigBee Debug Terminal</string>
+   </property>
+  </action>
+  <action name="actionWirelessMonitor">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/wireless.png</normaloff>:/firelink/Resources/icons/wireless.png</iconset>
+   </property>
+   <property name="text">
+    <string>Wireless Spectrum Monitor</string>
+   </property>
+  </action>
+  <action name="actionZigbeeMonitor">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/network-2.png</normaloff>:/firelink/Resources/icons/network-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Network Monitor</string>
+   </property>
+   <property name="toolTip">
+    <string>Network Monitor</string>
+   </property>
+  </action>
+  <action name="actionSS">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/wifi-4.png</normaloff>:/firelink/Resources/icons/wifi-4.png</iconset>
+   </property>
+   <property name="text">
+    <string>SS</string>
+   </property>
+   <property name="toolTip">
+    <string>Site survey</string>
+   </property>
+  </action>
+  <action name="actionJobManager">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/file-manager-icon.png</normaloff>:/firelink/Resources/icons/file-manager-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>JobManager</string>
+   </property>
+  </action>
+  <action name="actionOTA">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/OTA_logo_400x400.png</normaloff>:/firelink/Resources/icons/OTA_logo_400x400.png</iconset>
+   </property>
+   <property name="text">
+    <string>OTA</string>
+   </property>
+  </action>
+  <action name="actionOpen_Job_2">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/open-icon.png</normaloff>:/firelink/Resources/icons/open-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Job</string>
+   </property>
+  </action>
+  <action name="actionClean_recent_job">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/paint-icon.png</normaloff>:/firelink/Resources/icons/paint-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clean recent job</string>
+   </property>
+  </action>
+  <action name="actionPCAP">
+   <property name="icon">
+    <iconset resource="firelink.qrc">
+     <normaloff>:/firelink/Resources/icons/network-play.png</normaloff>:/firelink/Resources/icons/network-play.png</iconset>
+   </property>
+   <property name="text">
+    <string>PCAP</string>
+   </property>
+   <property name="toolTip">
+    <string>Network Monitor (Recorded)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="firelink.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>OnNewJob()</slot>
+  <slot>OnSaveJob()</slot>
+  <slot>OnSaveJobAs()</slot>
+  <slot>OnDeleteJob()</slot>
+  <slot>OnExit()</slot>
+  <slot>OnOpenJob()</slot>
+  <slot>OnZigbeeTest()</slot>
+  <slot>onConnectZC()</slot>
+  <slot>onSendJob()</slot>
+  <slot>onFirmwareUpdate()</slot>
+  <slot>on_view_floor()</slot>
+  <slot>on_edit_add()</slot>
+  <slot>on_edit_edit()</slot>
+  <slot>on_edit_delete()</slot>
+  <slot>on_hardware_zigbee()</slot>
+  <slot>on_hardware_wio()</slot>
+  <slot>on_about()</slot>
+  <slot>on_zigbee_monitor()</slot>
+  <slot>on_wireless_monitor()</slot>
+  <slot>on_sniffer()</slot>
+ </slots>
+</ui>

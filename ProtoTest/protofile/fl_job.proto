@@ -1,0 +1,142 @@
+syntax = "proto2";
+
+import "fl_defs.proto";
+
+message DeviceModel {
+	enum Category {
+		UNDEFINED_CATEGORY = 0;
+		TWO_WIRE_NOTIFICATION_APPLIANCE = 1;
+		CONVENTIONAL_SMOKE_DETECTOR = 2;
+		CONVENTIONAL_HEAT_DETECTOR = 3;
+		PULL_STATION = 4;		
+	}
+	enum Type {
+		INPUT = 0;
+		OUTPUT = 1;
+	}
+	required DeviceBaseModel base_model = 1;
+	required string name = 2;
+	required string description = 3;
+	required Type type = 4;
+	required Category category = 5;
+}
+
+message DeviceModels {
+	repeated DeviceModel dev = 1;
+}
+
+message PBVersion {
+	optional uint32 major = 1;
+	optional uint32 minor = 2;
+	optional uint32 patch = 3;
+	optional string suffix = 4;
+}
+
+message PBPosition {
+  required float x = 1;
+  required float y = 2;
+  optional float z = 3;  
+}
+
+message PBTransform {
+  required float m11 = 1;
+  required float m12 = 2;
+  required float m13 = 3;
+  required float m21 = 4;
+  required float m22 = 5;
+  required float m23 = 6;
+  required float m31 = 7;
+  required float m32 = 8;
+  required float m33 = 9;
+}
+
+message PBGraphics {
+  	optional PBPosition pos = 1;
+  	optional PBTransform transform = 2;	
+  	optional string type = 3;
+  	optional float z_value = 4;
+	optional bytes svg_data = 5;
+	optional bytes img_data = 6;
+}
+
+message PBWio {
+	optional string guid = 1;
+	optional string title = 2;
+	optional string location = 3;
+	optional string mac_address = 4;
+	optional DeviceBaseModel model = 5;
+	optional SignalingType signaling = 6;
+	optional PBGraphics graphics = 7;	
+}
+
+message PBCorrelationInputFromZC {
+	optional string zc_guid = 1;
+	oneof source
+    {
+    	InputType input = 2;
+        SystemStatusType system_status = 3;
+        LocalTroubleType local_trouble = 4;
+        RemoteTroubleType remote_trouble = 5;
+    }	
+}
+
+message PBCorrelationInputFromWIO {
+	optional string wio_guid = 1;
+	optional InputType input = 2;
+}
+message PBCorrelationInput {
+	optional string guid = 1;
+	optional PBPosition pos = 2;
+	optional PBCorrelationInputFromWIO wio_input = 3;
+	optional PBCorrelationInputFromZC zc_input = 4;
+}
+
+message PBCorrelation {
+	optional string guid = 1;
+	enum TriggerType {
+		ANY_INPUTS = 0;
+		ALL_INPUTS = 1;
+	}
+	optional LocalRelay relay = 2;
+	optional TriggerType trigger = 3;
+	repeated PBCorrelationInput input = 4;
+}
+
+message PBZoneController {
+	optional string guid = 1;
+	optional string title = 2;
+	optional string location = 3;
+	optional string mac_address = 4;
+	optional string pan_id = 5;
+	optional uint32 channel = 6;
+	optional PBGraphics graphics = 7;
+	repeated PBWio wio = 8;	
+	repeated PBCorrelation correlation = 9;
+}
+
+message PBFloor {
+	enum UnitOfMeasure {
+		METERS = 0;
+		YARDS = 1;
+		FEET = 2;
+		INCHES = 3;
+		CENTIMETERS = 4;
+	}
+	optional string guid = 1;
+	optional string title = 2;
+	optional UnitOfMeasure unit_of_measure = 3;
+	optional PBGraphics graphics = 4;
+	repeated PBZoneController zc = 5;
+}
+
+message PBJob {
+	optional string guid = 1;
+	optional PBVersion job_version = 2;
+	optional PBVersion configurator_version = 3;
+	optional string creation_date_utc = 4;
+	optional string creation_time_utc = 5;
+	optional string title = 6;
+	optional string password = 7;
+	optional StandardType standard = 8;
+	repeated PBFloor floor = 9;
+}

@@ -1,0 +1,8 @@
+{
+"stats": {
+		"str": 34,
+		"int": 56,
+		"con": 22
+	},
+	"inventory": ["sword","shield","armor"]
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/Users/rong/Desktop/projects/js/c3/c3.css">
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="/Users/rong/Desktop/projects/js/c3/c3.js"></script>
+
+<script type="text/javascript">
+  var columns_t1 = [];
+  var chart ;
+  columns_t1[0] = ['x',10,20,50,60]
+      for (var i = 1; i < 6; i++ ) {
+        columns_t1[i] = ['data' + i, 10 * i, 20 * i, 30 * i];
+      }
+
+	
+	function myFunction222() {
+        columns_t1[6] = ['y' ,50,60,80];
+        chart = c3.generate({
+           bindto: '#chart',
+        data: {
+         x:'x',
+
+          columns:    columns_t1
+          
+        },
+        type:'spline',
+         axes: {
+            data1: 'y',
+            data2: 'y2',
+          },
+           axis: {
+          x: {
+            label: 'X Label'
+          },
+          y: {
+            label: {
+              text: 'Y Axis Label',
+              position: 'outer-middle'
+            },
+            min:-100,
+            max:400
+
+          },
+          y2: {
+            show: true,
+            label: {
+              text: 'Y2 Axis Label',
+              position: 'outer-middle'
+            }
+          }
+        }
+
+       
+      });
+
+
+        var chart2 = c3.generate({
+        bindto: '#chart2',
+        data: {
+          x: 'x',      
+          columns: [
+            ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
+
+            ['sample1', 100, 200, 100, 400, 150, 250],
+            ['sample2', 200, 200, 100, 400, 150, 350]
+          ],
+        },
+        axis: 
+        {
+          x: 
+          {
+              type: 'timeseries',
+              min: new Date('2013-01-01'),
+              max: '2013-01-10',
+              tick : {
+                format : "%Y-%m-%d " // https://github.com/mbostock/d3/wiki/Time-Formatting#wiki-format
+              }              
+            }
+
+
+         
+
+          }
+      });
+
+        var chart3 = c3.generate({
+           bindto: '#chart3',
+    data: {
+        x: 'x',
+        columns: [
+            ['x', 30, 80, 130, 230, 300, 400],
+            ['data1', 30, 200, 100, 400, 150, 250],
+            ['data2', 130, 300, 200, 300, 250, 450]
+        ],
+        types: {
+            data1: 'spline',
+            data2: 'line',         
+        },
+        
+    }
+});
+
+        var chart4 = c3.generate({
+           bindto: '#chart4',
+    data: {
+        columns: [
+            ['data1', 300, 350, 300, 0, 0, 0],
+            ['data2', 130, 100, 140, 200, 150, 50]
+        ],
+        types: {
+            data1: 'area',
+            data2: 'area-spline'
+        }
+    }
+});
+        chart4.transform('pie');
+        
+    }
+
+
+    function Function222() {
+      columns_t1[6] = ['ddd',1,5,9];
+      chart.load({
+        columns: columns_t1
+    });
+
+    }
+
+</script>
+
+
+ 
+</head>
+
+<body onload="myFunction222()">
+
+<h1>A Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="Function222()">Try it</button>
+ <div id="chart"></div>
+ <div id="chart2"></div>
+ <div id="chart3"></div>
+ <div id="chart4"></div>
+
+
+
+</body>
+</html>

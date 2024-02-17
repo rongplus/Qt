@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E797B6471F715B7200940996 /* MyRatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797B6461F715B7200940996 /* MyRatingControl.swift */; };
+		E797B6491F71C0DD00940996 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797B6481F71C0DD00940996 /* Person.swift */; };
+		E797B64B1F71C89100940996 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797B64A1F71C89100940996 /* MyTableViewCell.swift */; };
+		E797B64D1F72C3BE00940996 /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797B64C1F72C3BE00940996 /* PersonTableViewController.swift */; };
+		E7B13C851F6C50FD006A4FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B13C841F6C50FD006A4FA6 /* AppDelegate.swift */; };
+		E7B13C871F6C50FD006A4FA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B13C861F6C50FD006A4FA6 /* ViewController.swift */; };
+		E7B13C8A1F6C50FD006A4FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B13C881F6C50FD006A4FA6 /* Main.storyboard */; };
+		E7B13C8C1F6C50FD006A4FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B13C8B1F6C50FD006A4FA6 /* Assets.xcassets */; };
+		E7B13C8F1F6C50FD006A4FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B13C8D1F6C50FD006A4FA6 /* LaunchScreen.storyboard */; };
+		E7B13C9A1F6C50FD006A4FA6 /* dajia2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B13C991F6C50FD006A4FA6 /* dajia2Tests.swift */; };
+		E7B13CA51F6C50FD006A4FA6 /* dajia2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B13CA41F6C50FD006A4FA6 /* dajia2UITests.swift */; };
+		E7F65DEE1F744EA500EC1D97 /* MyCollectionVCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F65DED1F744EA500EC1D97 /* MyCollectionVCtr.swift */; };
+		E7F65DF01F744EEF00EC1D97 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F65DEF1F744EEF00EC1D97 /* MyCollectionViewCell.swift */; };
+		E7F65DF21F75519300EC1D97 /* MyFlickrViewCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F65DF11F75519300EC1D97 /* MyFlickrViewCtr.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7B13C961F6C50FD006A4FA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7B13C791F6C50FD006A4FA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7B13C801F6C50FD006A4FA6;
+			remoteInfo = dajia2;
+		};
+		E7B13CA11F6C50FD006A4FA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7B13C791F6C50FD006A4FA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7B13C801F6C50FD006A4FA6;
+			remoteInfo = dajia2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E797B6461F715B7200940996 /* MyRatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyRatingControl.swift; path = ../MyRatingControl.swift; sourceTree = "<group>"; };
+		E797B6481F71C0DD00940996 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E797B64A1F71C89100940996 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		E797B64C1F72C3BE00940996 /* PersonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
+		E7B13C811F6C50FD006A4FA6 /* dajia2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dajia2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B13C841F6C50FD006A4FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7B13C861F6C50FD006A4FA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7B13C891F6C50FD006A4FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7B13C8B1F6C50FD006A4FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7B13C8E1F6C50FD006A4FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E7B13C901F6C50FD006A4FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B13C951F6C50FD006A4FA6 /* dajia2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dajia2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B13C991F6C50FD006A4FA6 /* dajia2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dajia2Tests.swift; sourceTree = "<group>"; };
+		E7B13C9B1F6C50FD006A4FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B13CA01F6C50FD006A4FA6 /* dajia2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dajia2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B13CA41F6C50FD006A4FA6 /* dajia2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dajia2UITests.swift; sourceTree = "<group>"; };
+		E7B13CA61F6C50FD006A4FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F65DED1F744EA500EC1D97 /* MyCollectionVCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionVCtr.swift; sourceTree = "<group>"; };
+		E7F65DEF1F744EEF00EC1D97 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7F65DF11F75519300EC1D97 /* MyFlickrViewCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFlickrViewCtr.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7B13C7E1F6C50FD006A4FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B13C921F6C50FD006A4FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B13C9D1F6C50FD006A4FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7B13C781F6C50FD006A4FA6 = {
+			isa = PBXGroup;
+			children = (
+				E7B13C831F6C50FD006A4FA6 /* dajia2 */,
+				E7B13C981F6C50FD006A4FA6 /* dajia2Tests */,
+				E7B13CA31F6C50FD006A4FA6 /* dajia2UITests */,
+				E7B13C821F6C50FD006A4FA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7B13C821F6C50FD006A4FA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7B13C811F6C50FD006A4FA6 /* dajia2.app */,
+				E7B13C951F6C50FD006A4FA6 /* dajia2Tests.xctest */,
+				E7B13CA01F6C50FD006A4FA6 /* dajia2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7B13C831F6C50FD006A4FA6 /* dajia2 */ = {
+			isa = PBXGroup;
+			children = (
+				E797B6461F715B7200940996 /* MyRatingControl.swift */,
+				E7B13C841F6C50FD006A4FA6 /* AppDelegate.swift */,
+				E797B64C1F72C3BE00940996 /* PersonTableViewController.swift */,
+				E7B13C861F6C50FD006A4FA6 /* ViewController.swift */,
+				E7B13C881F6C50FD006A4FA6 /* Main.storyboard */,
+				E7F65DF11F75519300EC1D97 /* MyFlickrViewCtr.swift */,
+				E7F65DED1F744EA500EC1D97 /* MyCollectionVCtr.swift */,
+				E7F65DEF1F744EEF00EC1D97 /* MyCollectionViewCell.swift */,
+				E797B64A1F71C89100940996 /* MyTableViewCell.swift */,
+				E797B6481F71C0DD00940996 /* Person.swift */,
+				E7B13C8B1F6C50FD006A4FA6 /* Assets.xcassets */,
+				E7B13C8D1F6C50FD006A4FA6 /* LaunchScreen.storyboard */,
+				E7B13C901F6C50FD006A4FA6 /* Info.plist */,
+			);
+			path = dajia2;
+			sourceTree = "<group>";
+		};
+		E7B13C981F6C50FD006A4FA6 /* dajia2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E7B13C991F6C50FD006A4FA6 /* dajia2Tests.swift */,
+				E7B13C9B1F6C50FD006A4FA6 /* Info.plist */,
+			);
+			path = dajia2Tests;
+			sourceTree = "<group>";
+		};
+		E7B13CA31F6C50FD006A4FA6 /* dajia2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7B13CA41F6C50FD006A4FA6 /* dajia2UITests.swift */,
+				E7B13CA61F6C50FD006A4FA6 /* Info.plist */,
+			);
+			path = dajia2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7B13C801F6C50FD006A4FA6 /* dajia2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B13CA91F6C50FD006A4FA6 /* Build configuration list for PBXNativeTarget "dajia2" */;
+			buildPhases = (
+				E7B13C7D1F6C50FD006A4FA6 /* Sources */,
+				E7B13C7E1F6C50FD006A4FA6 /* Frameworks */,
+				E7B13C7F1F6C50FD006A4FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dajia2;
+			productName = dajia2;
+			productReference = E7B13C811F6C50FD006A4FA6 /* dajia2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7B13C941F6C50FD006A4FA6 /* dajia2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B13CAC1F6C50FD006A4FA6 /* Build configuration list for PBXNativeTarget "dajia2Tests" */;
+			buildPhases = (
+				E7B13C911F6C50FD006A4FA6 /* Sources */,
+				E7B13C921F6C50FD006A4FA6 /* Frameworks */,
+				E7B13C931F6C50FD006A4FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7B13C971F6C50FD006A4FA6 /* PBXTargetDependency */,
+			);
+			name = dajia2Tests;
+			productName = dajia2Tests;
+			productReference = E7B13C951F6C50FD006A4FA6 /* dajia2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7B13C9F1F6C50FD006A4FA6 /* dajia2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B13CAF1F6C50FD006A4FA6 /* Build configuration list for PBXNativeTarget "dajia2UITests" */;
+			buildPhases = (
+				E7B13C9C1F6C50FD006A4FA6 /* Sources */,
+				E7B13C9D1F6C50FD006A4FA6 /* Frameworks */,
+				E7B13C9E1F6C50FD006A4FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7B13CA21F6C50FD006A4FA6 /* PBXTargetDependency */,
+			);
+			name = dajia2UITests;
+			productName = dajia2UITests;
+			productReference = E7B13CA01F6C50FD006A4FA6 /* dajia2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7B13C791F6C50FD006A4FA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Rong Huang";
+				TargetAttributes = {
+					E7B13C801F6C50FD006A4FA6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					E7B13C941F6C50FD006A4FA6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E7B13C801F6C50FD006A4FA6;
+					};
+					E7B13C9F1F6C50FD006A4FA6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E7B13C801F6C50FD006A4FA6;
+					};
+				};
+			};
+			buildConfigurationList = E7B13C7C1F6C50FD006A4FA6 /* Build configuration list for PBXProject "dajia2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7B13C781F6C50FD006A4FA6;
+			productRefGroup = E7B13C821F6C50FD006A4FA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7B13C801F6C50FD006A4FA6 /* dajia2 */,
+				E7B13C941F6C50FD006A4FA6 /* dajia2Tests */,
+				E7B13C9F1F6C50FD006A4FA6 /* dajia2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7B13C7F1F6C50FD006A4FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B13C8F1F6C50FD006A4FA6 /* LaunchScreen.storyboard in Resources */,
+				E7B13C8C1F6C50FD006A4FA6 /* Assets.xcassets in Resources */,
+				E7B13C8A1F6C50FD006A4FA6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B13C931F6C50FD006A4FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B13C9E1F6C50FD006A4FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7B13C7D1F6C50FD006A4FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B13C871F6C50FD006A4FA6 /* ViewController.swift in Sources */,
+				E7B13C851F6C50FD006A4FA6 /* AppDelegate.swift in Sources */,
+				E7F65DF01F744EEF00EC1D97 /* MyCollectionViewCell.swift in Sources */,
+				E7F65DEE1F744EA500EC1D97 /* MyCollectionVCtr.swift in Sources */,
+				E7F65DF21F75519300EC1D97 /* MyFlickrViewCtr.swift in Sources */,
+				E797B64D1F72C3BE00940996 /* PersonTableViewController.swift in Sources */,
+				E797B6491F71C0DD00940996 /* Person.swift in Sources */,
+				E797B64B1F71C89100940996 /* MyTableViewCell.swift in Sources */,
+				E797B6471F715B7200940996 /* MyRatingControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B13C911F6C50FD006A4FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B13C9A1F6C50FD006A4FA6 /* dajia2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B13C9C1F6C50FD006A4FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B13CA51F6C50FD006A4FA6 /* dajia2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7B13C971F6C50FD006A4FA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7B13C801F6C50FD006A4FA6 /* dajia2 */;
+			targetProxy = E7B13C961F6C50FD006A4FA6 /* PBXContainerItemProxy */;
+		};
+		E7B13CA21F6C50FD006A4FA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7B13C801F6C50FD006A4FA6 /* dajia2 */;
+			targetProxy = E7B13CA11F6C50FD006A4FA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7B13C881F6C50FD006A4FA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7B13C891F6C50FD006A4FA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E7B13C8D1F6C50FD006A4FA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7B13C8E1F6C50FD006A4FA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7B13CA71F6C50FD006A4FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7B13CA81F6C50FD006A4FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7B13CAA1F6C50FD006A4FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = dajia2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caugroup.dajia2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E7B13CAB1F6C50FD006A4FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = dajia2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caugroup.dajia2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E7B13CAD1F6C50FD006A4FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = dajia2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caugroup.dajia2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dajia2.app/dajia2";
+			};
+			name = Debug;
+		};
+		E7B13CAE1F6C50FD006A4FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = dajia2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caugroup.dajia2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dajia2.app/dajia2";
+			};
+			name = Release;
+		};
+		E7B13CB01F6C50FD006A4FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = dajia2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caugroup.dajia2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = dajia2;
+			};
+			name = Debug;
+		};
+		E7B13CB11F6C50FD006A4FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = dajia2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caugroup.dajia2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = dajia2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7B13C7C1F6C50FD006A4FA6 /* Build configuration list for PBXProject "dajia2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B13CA71F6C50FD006A4FA6 /* Debug */,
+				E7B13CA81F6C50FD006A4FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B13CA91F6C50FD006A4FA6 /* Build configuration list for PBXNativeTarget "dajia2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B13CAA1F6C50FD006A4FA6 /* Debug */,
+				E7B13CAB1F6C50FD006A4FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B13CAC1F6C50FD006A4FA6 /* Build configuration list for PBXNativeTarget "dajia2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B13CAD1F6C50FD006A4FA6 /* Debug */,
+				E7B13CAE1F6C50FD006A4FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B13CAF1F6C50FD006A4FA6 /* Build configuration list for PBXNativeTarget "dajia2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B13CB01F6C50FD006A4FA6 /* Debug */,
+				E7B13CB11F6C50FD006A4FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7B13C791F6C50FD006A4FA6 /* Project object */;
+}

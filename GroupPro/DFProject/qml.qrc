@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>DFLogin.qml</file>
+        <file>MainForm.qml</file>
+        <file>MainFormForm.ui.qml</file>
+        <file>MainView.qml</file>
+        <file>Portrait.qml</file>
+        <file>Landscape.qml</file>
+        <file>images/cdsi_logo.png</file>
+        <file>PopupDialog.qml</file>
+        <file>ListStudy.qml</file>
+        <file>ListSite.qml</file>
+        <file>ListSubject.qml</file>
+        <file>ListGroup.qml</file>
+        <file>ListPage.qml</file>
+        <file>PageView.qml</file>
+        <file>TT2.qml</file>
+        <file>ContactModel.qml</file>
+        <file>images/AlbertEinstein.png</file>
+        <file>images/site.jpeg</file>
+        <file>images/Wiki.png</file>
+        <file>images/yyy.png</file>
+        <file>ListVisitmap.qml</file>
+        <file>images/linux.png</file>
+        <file>images/chart.png</file>
+        <file>images/FusionChartGraph.jpg</file>
+        <file>ImageButton.qml</file>
+    </qresource>
+</RCC>

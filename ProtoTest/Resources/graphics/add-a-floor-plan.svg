@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   id="svg2998"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="add-a-floor-plan.svg">
+  <defs
+     id="defs3000" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.86831672"
+     inkscape:cx="253.9616"
+     inkscape:cy="332.56506"
+     inkscape:current-layer="layer1"
+     id="namedview3002"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="1042"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3004">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#404040;stroke-width:7.03700787;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:28.1480315,28.1480315;stroke-dashoffset:7.03700821"
+       id="rect5493"
+       width="894.67273"
+       height="427.53012"
+       x="77.817612"
+       y="171.0135"
+       ry="90.467125" />
+    <text
+       xml:space="preserve"
+       style="font-size:56.29092788999999200px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#404040;fill-opacity:1;stroke:none;font-family:Sans"
+       x="213.50186"
+       y="389.79343"
+       id="text5957"
+       sodipodi:linespacing="125%"
+       transform="scale(0.97424071,1.0264404)"><tspan
+         sodipodi:role="line"
+         id="tspan5959"
+         x="213.50186"
+         y="389.79343">Click Here To Add a Floor</tspan></text>
+  </g>
+</svg>

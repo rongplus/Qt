@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/app">
+        <file>img/check.jpeg</file>
+        <file>img/components_switches_radio1.png</file>
+        <file>img/custom-radio-buttons.png</file>
+        <file>img/par_1411128613.jpg</file>
+        <file>img/vector-check-box.jpg</file>
+        <file>img/checked-checkbox-512.png</file>
+        <file>img/red-label.jpg</file>
+        <file>img/combobox-data-entry-s.png</file>
+        <file>img/barcode.png</file>
+    </qresource>
+</RCC>

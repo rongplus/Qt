@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Page1.qml</file>
+        <file>Page1Form.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>P1.qml</file>
+        <file>assets/background.png</file>
+        <file>assets/box_green.png</file>
+        <file>main.cpp</file>
+        <file>ClickableImageV2.qml</file>
+        <file>assets/robot.png</file>
+        <file>assets/safari.png</file>
+        <file>assets/vs.png</file>
+        <file>P2.qml</file>
+        <file>FF1.qml</file>
+        <file>TrafficLight.qml</file>
+        <file>MessageBox1.qml</file>
+        <file>fisrtJS.js</file>
+        <file>database.qml</file>
+        <file>Db1.qml</file>
+        <file>Myweb.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/rong/Projects/Cross/android-build/libs/QtAndroid-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18e64b1c8efb55ae5a0f4f14a2ddcf206e9cf3c5">
+        <dex dex="/Users/rong/Projects/Cross/android-build/build/intermediates/pre-dexed/debug/QtAndroid-bundled_66a8653b45bc842a987b99dc9fd48dc605930e6c.jar" />
+    </item>
+
+</items>

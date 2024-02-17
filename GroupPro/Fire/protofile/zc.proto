@@ -1,0 +1,95 @@
+syntax = "proto2";
+
+
+message WIO_INFO
+  {
+  required string MacAddr = 1; 
+  required string Label = 2;
+  required int32 CktType = 3;
+  } 
+ 
+message TIMER
+  {
+  required int32 ID = 1;
+  required int32 Duration = 2;
+  }
+
+message LOCAL_OUTPUT_CORR
+  {
+  required string IptCorrs= 1 ;// 4 char
+  required string StatCorrs = 2;//  14 char
+  required string TrbCorrs = 3;// 12 char
+  required string RemTrbCorrs = 4;  //18 char
+  required string RemIptCorrs = 5;// for WIO
+  }
+  
+message REMOTE_OUTPUT_CORR
+   {
+  required string IptCorrs= 1 ;
+  required string StatCorrs = 2;  
+  required string RemIptCorrs =3;
+  }
+
+message PASSWORD
+  {
+  required int32 Len = 1;
+  required string Data = 2;
+  } 
+ 
+ message CFG_DST
+  {
+  required int32 StartMonth = 1;
+  required int32 StartOrdinalWeek = 2; 
+  required int32 StartDayOfWeek = 3; 
+  required int32 StartHour = 4;
+  required int32 StartMin = 5;
+
+  required int32 EndMonth = 6;
+  required int32 EndOrdinalWeek = 7;
+  required int32 EndDayOfWeek = 8;
+  required int32 EndHour = 9;
+  required int32 EndMin = 10;
+
+  required int32 DailyAdjust = 11; 
+  }
+  
+message ZC
+  {
+  required string Label = 1;
+  required string GUID = 2;
+  required string ConfigVer = 3; 
+  required int32 gSCUFeatureFlags = 4; 
+  required int32 gHWUStrobesType = 5;
+  required string IptCktProcessType = 6;
+  required LOCAL_OUTPUT_CORR LocalCorr = 7;
+  
+  required CFG_DST Dst = 8;
+  required int32 DataIntCheck = 9;
+  
+  repeated REMOTE_OUTPUT_CORR RemoteCorr = 10;
+  repeated TIMER Timers = 11;
+  repeated WIO_INFO  WIOInfo = 12;
+  repeated PASSWORD Password = 13;
+  
+  
+  }
+  
+
+  
+message PASSWORDS
+  {
+  repeated PASSWORD Password = 1;
+  }
+
+message CFG_RTC 
+  {
+  required int32 seconds = 1; 
+  required int32 minutes = 2;
+  required int32 hours = 3;
+  required int32 date = 4;
+  required int32 month = 5;
+  required int32 year = 6;
+  }
+  
+
+

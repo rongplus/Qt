@@ -1,0 +1,100 @@
+syntax = "proto3";
+
+message Pro_Point
+{
+	 float x = 1;
+	 float y = 2;
+}
+message PRO_TIMER
+{
+	int32 ID = 1;
+	int32 Duration = 2;
+}
+
+message PRO_DayLightSaving
+{
+	int32 month=1;
+	int32 week=2; // week of the month
+	int32 dayOfWeek=3; // what day of the week
+	int32 hour=4;
+	int32 min=5;
+}
+  
+message Pro_WIO
+{
+	string Channel =1;
+	string GUID = 2;
+	string Location = 3;
+	string MACAddr = 4;
+	string Model = 5;
+	string Name = 6;
+	Pro_Point Position =7;
+	string Signaling = 8;
+	string Type = 9;
+	Pro_Point Scale = 10;
+	string WIOType = 11;
+	string Corrs = 12;
+	string Value =13;
+	string Comment = 14;
+}
+message Pro_ZCIO
+{
+	 string Name = 1;
+	 string Type = 2;
+	 string Value =3;
+	 string Corrs = 4;
+	 string CktProcessType = 5;
+	 string Tag = 6;
+	 string Comment = 7;
+}
+
+message Pro_ZC
+{
+	string Channel = 1;
+	string GUID = 2;
+	string Location =3;
+	string MACAddr = 4;
+	string Name = 5;
+	string PANID = 6;
+	Pro_Point Position = 7;
+	string Type = 8;
+	Pro_Point Scale = 9;
+	repeated Pro_WIO WIO = 10;
+	repeated Pro_ZCIO Input = 11;
+	repeated Pro_ZCIO RELAY = 12;
+	repeated Pro_ZCIO LOCAL_TROUBLES = 13;
+	repeated Pro_ZCIO REMOTE_TROUBLE = 14;
+	repeated Pro_ZCIO STATS = 15;
+	uint32 range = 16;
+	repeated string PassCode = 17;
+	repeated PRO_TIMER Timer= 18;
+	int32 SCU_FEATURE_FLAGS = 19;
+	string Comment = 20;
+}
+
+message Pro_Floor
+{
+	string Comment = 1;
+	string FloorGraph =2;
+	string GUID = 3;
+	string Name = 4;
+	Pro_Point Position = 5;
+	string Type = 6;
+	Pro_Point Scale = 7;
+	string unit_of_measure = 8;
+	repeated Pro_ZC ZC = 9;
+	string plotting_scale = 10;
+}
+
+message Pro_Job
+{
+	string  Comment = 1;
+	string  GUID = 2;
+	string  JobPath = 3;
+	string  Name = 4;
+	string  Standard = 5;
+	string  Type = 6;
+	repeated Pro_Floor Floor = 7;
+	repeated PRO_DayLightSaving DayLight = 8;
+	int32 DailyAdjust = 9; // Indicates how many seconds we compensate for clock errors  
+}

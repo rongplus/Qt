@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>Login.qml</file>
+        <file>LoginForm.ui.qml</file>
+        <file>Pattern1.qml</file>
+        <file>R1.qml</file>
+        <file>G1.qml</file>
+        <file>B1.qml</file>
+        <file>P1.qml</file>
+        <file>P2.qml</file>
+        <file>P3.qml</file>
+        <file>List.qml</file>
+        <file>Background.qml</file>
+        <file>main.cpp</file>
+        <file>images/a1.jpg</file>
+        <file>images/a2.jpg</file>
+        <file>images/a3.jpg</file>
+    </qresource>
+</RCC>

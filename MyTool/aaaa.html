@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"/Users/rong/Desktop/projects/js/c3/c3.css\">
+          <script src=\"http://d3js.org/d3.v3.min.js\" charset=\"utf-8\"></script>
+           <script src=\"/Users/rong/Desktop/projects/js/c3/c3.js\"></script>
+        </head>
+        <body>
+        	 <h1>A Web Page</h1>
+        	  <p id=\"demo\">A Paragraph</p>
+        	  <div id=\"chart\"></div>
+        	  <div id=\"chart2\"></div>
+        	  <div id=\"chart3\"></div>
+        	  <div id=\"chart4\"></div>
+        	   <script type=\"text/javascript\">
+        	     var data_value = [];data_value[0] = ['x' , 2, 10, 20, 30, 40, 50];
+        	     data_value[1] = ['data -1' , 5, 15, 25, 35, 45, 55];
+        	     data_value[2] = ['data -2' , 10, 20, 30, 40, 50, 60];
+        	     data_value[3] = ['data -3 ' , 15, 25, 35, 45, 55, 65 ];
+        	     data_value[4] = ['data -4' , 20, 30, 40, 50, 60, 70];
+        	     data_value[5] = ['data -5' , 25, 35, 45, 55, 65, 75];
+        	     data_value[6] = ['data -6' , 30, 40, 50, 60, 70, 80];
+        	     data_value[7] = ['y',50,60,80];
+        	     var chart = c3.generate(
+        	     {
+        	       bindto: '#chart',
+        	       data: 
+        	       	{
+        	       		x:'x',
+        	           	columns:    data_value
+        	        },
+        	        type:'spline',
+        	        axes: 
+        	        {
+        	            data1: 'y',
+        	            data2: 'y2',
+        	        },
+        	        axis: 
+        	        {
+        	            x: 
+        	            {
+        	                label: 'X Label'
+        	            },
+        	            y: 
+        	            {
+        	                label: 
+        	                {
+        	                	text: 'Y Axis Label',
+        	                	position: 'outer-middle'
+        	               	},
+        	                min:-100,
+        	                max:400
+        	             },
+        	            y2:
+        	            {
+        	                show: true,
+        	                label: 
+        	                {
+        	                     text: 'Y2 Axis Label',
+        	                     position: 'outer-middle'
+        	                 }
+        	             }
+        	         }
+        	     });
+        	  </script>
+
+        	  </body>
+</html>
+
+
+
+
+
+
+
